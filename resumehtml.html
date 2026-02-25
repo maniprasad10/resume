@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE Resume</title>
+    <link rel="stylesheet" href="resumecss.css">
+    <script src="resumejs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Edit Panel -->
+        <div class="edit-panel">
+            <h2><strong>RESUME</strong></h2>
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" id="fullName" value="KUNDANAPALLI MANI PRASAD">
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email" value="23u11a6654@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" id="phone" value="8332080989">
+            </div>
+
+            <div class="form-group">
+                <label>LinkedIn:</label>
+                <input type="url" id="linkedin" value="https://www.linkedin.com/in/kundanapalli-mani-prasad-06799a2a2?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+            </div>
+
+            <div class="form-group">
+                <label>GitHub:</label>
+                <input type="url" id="github" value="https://github.com/maniprasad10">
+            </div>
+
+            <div class="form-group">
+                <label>Objective:</label>
+                <textarea id="objective"
+                    rows="3">Motivated B.Tech Computer Science graduate seeking entry-level Software Developer position. Passionate about web development, problem-solving, and building innovative solutions. Eager to contribute fresh ideas and learn from experienced professionals.</textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Education (University):</label>
+                <input type="text" id="university" value="JNTUH">
+            </div>
+
+            <div class="form-group">
+                <label>Degree:</label>
+                <input type="text" id="degree" value="B.Tech Computer Science engineering - ai&ml">
+            </div>
+
+            <div class="form-group">
+                <label>Graduation Year:</label>
+                <input type="text" id="gradYear" value="2027">
+            </div>
+
+            <div class="form-group">
+                <label>Skills (comma separated):</label>
+                <input type="text" id="skills" value="HTML, CSS, JavaScript, React, Node.js, Python, Git, MySQL">
+            </div>
+
+            <div class="form-group">
+                <label>Projects (add one per line):</label>
+                <textarea id="projects" rows="4"> | React, Node.js | 
+Todo App | React, Firebase | Responsive task management application | Portfolio Website | HTML, CSS, JS | Personal portfolio showcasing projects and skills</textarea>
+            </div>
+
+            <button onclick="updateResume()" class="update-btn">🔄 Update Resume</button>
+        </div>
+
+        <!-- Resume Preview -->
+        <div class="resume-preview">
+            <div class="resume" id="resumeContent">
+                <header class="resume-header">
+                    <h1 id="resumeName">KUNDANAPALLI MANI PRASAD</h1>
+                    <div class="contact-info">
+                        <span id="resumeEmail">23u11a6554@gmail.com</span> |
+                        <span id="resumePhone">8332080989</span> |
+                        <a id="resumeLinkedin" href="#" target="_blank">LinkedIn</a> |
+                        <a id="resumeGithub" href="#" target="_blank">GitHub</a>
+                    </div>
+                </header>
+
+                <section class="resume-section">
+                    <h2>🎯 Objective</h2>
+                    <p id="resumeObjective">Motivated B.Tech Computer Science graduate seeking entry-level Software
+                        Developer position...</p>
+                </section>
+
+                <section class="resume-section">
+                    <h2>🎓 Education</h2>
+                    <div class="education-item">
+                        <h3 id="resumeDegree">B.Tech Computer Science</h3>
+                        <p id="resumeUniversity">JNTUH University | <span id="resumeGradYear">2026</span></p>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <h2>💻 Skills</h2>
+                    <ul id="resumeSkills"></ul>
+                </section>
+
+                <section class="resume-section">
+                    <h2>🚀 Projects</h2>
+                    <div id="resumeProjects"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
